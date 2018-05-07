@@ -1,3 +1,6 @@
+
+print ('Developed by Ashish Baboo.' + '\n')
+
 import xlrd
 import geocoder
 import openpyxl
@@ -6,7 +9,7 @@ from openpyxl import load_workbook
 
 
 
-location = "C:\\Users\\ashish.baboo\\Desktop\\Cleaning Tools\\Cleansing Template.xlsx"
+location = "location of Cleansing Template.xlsx"
 workbook = xlrd.open_workbook(location)
 sheet = workbook.sheet_by_index(1)
 
