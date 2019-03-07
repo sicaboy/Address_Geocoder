@@ -9,7 +9,7 @@ from openpyxl import load_workbook
 
 
 
-location = "location of Cleansing Template.xlsx"
+location = "address_to_be_processed.xlsx"
 workbook = xlrd.open_workbook(location)
 sheet = workbook.sheet_by_index(1)
 
@@ -17,7 +17,7 @@ sheet = workbook.sheet_by_index(1)
 Rows = sheet.nrows
 Cols = sheet.ncols
 
-wb = load_workbook('Cleansing Template.xlsx')
+wb = load_workbook('address_to_be_processed.xlsx')
 ws1 = wb.get_sheet_by_name("Locations")
 
 
@@ -106,7 +106,7 @@ for i in range(1,Rows):
     Longitude.value = cadd.lng
     Accuracy.value = cadd.quality
     
-    wb.save('Cleansing Template.xlsx')
+    wb.save('address_to_be_processed.xlsx')
     
         
 
